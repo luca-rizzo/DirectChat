@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/disconnect"
+        android:title="@string/close_communication"
+        android:icon="@drawable/close_comm_image"
+        app:showAsAction="ifRoom"
+        />
+</menu>

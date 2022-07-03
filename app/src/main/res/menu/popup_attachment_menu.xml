@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pickFromGallery"
+        android:title="@string/gallery" />
+
+    <item
+        android:id="@+id/pickAudio"
+        android:title="@string/audio"/>
+
+    <item
+        android:id="@+id/pickGeneralFile"
+        android:title="@string/general_file"/>
+
+</menu>

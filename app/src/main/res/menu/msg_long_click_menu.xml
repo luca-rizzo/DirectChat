@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/shareContent"
+        android:title="@string/share_content"
+        android:icon="@drawable/share_content_image"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/copyText"
+        android:title="@string/copy_to_clipboard"
+        android:icon="@drawable/txt_copy_image"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/deleteMsgItem"
+        android:title="@string/delete_message"
+        android:icon="@drawable/delete_image"
+        app:showAsAction="ifRoom"
+        />
+</menu>

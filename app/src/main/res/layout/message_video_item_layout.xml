@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageCV">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/MyRoundImageView"
+                android:id="@+id/msgImg"
+                android:layout_width="280dp"
+                android:layout_height="280dp" />
+
+            <ImageView
+                android:src="@drawable/play_circle_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignBottom="@+id/msgImg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp" />
+            <TextView
+                android:id="@+id/msgDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/msgImg"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Message date"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

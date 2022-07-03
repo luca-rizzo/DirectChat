@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:title="@string/save_settings"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            app:key="saveImagesToShared"
+            app:title="@string/save_image_to_gallery"
+            app:singleLineTitle="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            app:key="saveVideosToShared"
+            app:title="@string/save_video_to_gallery"
+            app:singleLineTitle="false"
+            app:iconSpaceReserved="false"
+            />
+        <SwitchPreferenceCompat
+            app:key="saveAudiosToShared"
+            app:title="@string/save_audio_to_audio_player"
+            app:singleLineTitle="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            app:key="saveGeneralFileToShared"
+            app:title="@string/save_file_to_download"
+            app:singleLineTitle="false"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

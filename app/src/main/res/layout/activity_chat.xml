@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/chatLayout"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".activity.ChatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msgRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/msgTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/msgTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendAttachmentButton"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/sendMsgButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:src="@drawable/send_text_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sendPhotoVidButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/photo_camera"
+        app:layout_constraintEnd_toStartOf="@id/sendRecButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sendRecButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/microphone_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sendAttachmentButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/attach_file_image"
+        app:layout_constraintEnd_toStartOf="@id/sendPhotoVidButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/fileNameTxtView"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:text="Sending file name"
+        app:layout_constraintBottom_toTopOf="@id/sendingProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/sendingProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginBottom = "8dp"
+        android:progress="1"
+        android:visibility="invisible"/>
+
+    <Chronometer
+        android:id="@+id/recChronometer"
+        android:layout_width="0dp"
+        android:textColor="@color/red"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sendRecButton"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
